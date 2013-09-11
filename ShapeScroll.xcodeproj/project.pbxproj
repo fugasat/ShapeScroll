@@ -23,6 +23,9 @@
 		6038A25F17DC9EEE002BFB68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6038A23A17DC9EEE002BFB68 /* Foundation.framework */; };
 		6038A26717DC9EEE002BFB68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6038A26517DC9EEE002BFB68 /* InfoPlist.strings */; };
 		6038A26A17DC9EEE002BFB68 /* ShapeScrollTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6038A26917DC9EEE002BFB68 /* ShapeScrollTests.m */; };
+		6085B19217E090CD00AA72A5 /* shape_scroll_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 6085B19117E090CD00AA72A5 /* shape_scroll_114.png */; };
+		6085B19417E0910500AA72A5 /* shape_scroll_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 6085B19317E0910500AA72A5 /* shape_scroll_57.png */; };
+		60F8DC2917E01EF500F94E68 /* SSShapeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F8DC2817E01EF500F94E68 /* SSShapeModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,10 @@
 		6038A26617DC9EEE002BFB68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6038A26817DC9EEE002BFB68 /* ShapeScrollTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeScrollTests.h; sourceTree = "<group>"; };
 		6038A26917DC9EEE002BFB68 /* ShapeScrollTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeScrollTests.m; sourceTree = "<group>"; };
+		6085B19117E090CD00AA72A5 /* shape_scroll_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shape_scroll_114.png; sourceTree = "<group>"; };
+		6085B19317E0910500AA72A5 /* shape_scroll_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shape_scroll_57.png; sourceTree = "<group>"; };
+		60F8DC2717E01EF500F94E68 /* SSShapeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSShapeModel.h; sourceTree = "<group>"; };
+		60F8DC2817E01EF500F94E68 /* SSShapeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSShapeModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +94,8 @@
 		6038A22C17DC9EEE002BFB68 = {
 			isa = PBXGroup;
 			children = (
+				6085B19317E0910500AA72A5 /* shape_scroll_57.png */,
+				6085B19117E090CD00AA72A5 /* shape_scroll_114.png */,
 				6038A23E17DC9EEE002BFB68 /* ShapeScroll */,
 				6038A26217DC9EEE002BFB68 /* ShapeScrollTests */,
 				6038A23717DC9EEE002BFB68 /* Frameworks */,
@@ -122,6 +131,8 @@
 				6038A25017DC9EEE002BFB68 /* SSViewController.h */,
 				6038A25117DC9EEE002BFB68 /* SSViewController.m */,
 				6038A25317DC9EEE002BFB68 /* SSViewController.xib */,
+				60F8DC2717E01EF500F94E68 /* SSShapeModel.h */,
+				60F8DC2817E01EF500F94E68 /* SSShapeModel.m */,
 				6038A23F17DC9EEE002BFB68 /* Supporting Files */,
 			);
 			path = ShapeScroll;
@@ -237,6 +248,8 @@
 				6038A24D17DC9EEE002BFB68 /* Default@2x.png in Resources */,
 				6038A24F17DC9EEE002BFB68 /* Default-568h@2x.png in Resources */,
 				6038A25517DC9EEE002BFB68 /* SSViewController.xib in Resources */,
+				6085B19217E090CD00AA72A5 /* shape_scroll_114.png in Resources */,
+				6085B19417E0910500AA72A5 /* shape_scroll_57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +287,7 @@
 				6038A24517DC9EEE002BFB68 /* main.m in Sources */,
 				6038A24917DC9EEE002BFB68 /* SSAppDelegate.m in Sources */,
 				6038A25217DC9EEE002BFB68 /* SSViewController.m in Sources */,
+				60F8DC2917E01EF500F94E68 /* SSShapeModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,10 +396,14 @@
 		6038A26E17DC9EEE002BFB68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Satoru Takahashi (9TKNE3VAG2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Satoru Takahashi (9TKNE3VAG2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShapeScroll/ShapeScroll-Prefix.pch";
 				INFOPLIST_FILE = "ShapeScroll/ShapeScroll-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -393,10 +411,14 @@
 		6038A26F17DC9EEE002BFB68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Satoru Takahashi (9TKNE3VAG2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Satoru Takahashi (9TKNE3VAG2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShapeScroll/ShapeScroll-Prefix.pch";
 				INFOPLIST_FILE = "ShapeScroll/ShapeScroll-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -454,6 +476,7 @@
 				6038A26F17DC9EEE002BFB68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6038A27017DC9EEE002BFB68 /* Build configuration list for PBXNativeTarget "ShapeScrollTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +485,7 @@
 				6038A27217DC9EEE002BFB68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
