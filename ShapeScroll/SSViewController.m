@@ -50,7 +50,8 @@ NSMutableArray *shapeModels;
         
         UIView *view = [[UIView alloc] initWithFrame:model.location];
         view.center = model.location.origin;
-        view.backgroundColor = [UIColor colorWithRed:0.0 green:0.5 blue:1.0 alpha:0.1];
+        float colorRange = (float)(rand() % 10) / 20;
+        view.backgroundColor = [UIColor colorWithRed:0.0 green:1.0 - colorRange blue:0.5 + colorRange alpha:0.1];
         
         model.view = view;
         
