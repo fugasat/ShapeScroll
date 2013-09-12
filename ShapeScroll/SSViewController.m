@@ -27,7 +27,7 @@ NSMutableArray *shapeModels;
 
     [self initializeLocations];
 
-    timer = [NSTimer scheduledTimerWithTimeInterval:0.01f target: self
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.0166f target: self
                                            selector:@selector(ticker:) userInfo: nil
                                             repeats: YES ];
 }
@@ -50,7 +50,8 @@ NSMutableArray *shapeModels;
         
         SSShapeView *view = [[SSShapeView alloc] initWithFrame:model.location];
         view.center = model.location.origin;
-        view.color = [UIColor colorWithRed:0.0 green:1.0 blue:0.7 alpha:0.1];
+        float colorRange = (float)(rand() % 10) / 20;
+        view.color = [UIColor colorWithRed:0.0 green:1.0 - colorRange blue:0.5 + colorRange alpha:0.1];
         view.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.0];
         
         model.view = view;
