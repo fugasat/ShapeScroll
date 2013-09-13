@@ -15,12 +15,14 @@
     UIView* _view;
     CGRect _location;
     CGPoint _move;
+    CGPoint _moveRange;
 @private
 }
 
 @property (strong, nonatomic) UIView* view;
 @property (assign, nonatomic) CGRect location;
 @property (assign, nonatomic) CGPoint move;
+@property (assign, nonatomic) CGPoint moveRange;
 
 
 @end
